@@ -1,0 +1,176 @@
+.container {
+    max-width: 836px;
+    height: 80vh;
+    padding: 0;
+}
+.content {
+    &__view {
+        &-switch {
+            margin-top: 18px;
+            margin-bottom: 18px;
+            display: flex;
+            justify-content: flex-end;
+            &__item {
+                padding: 0 10px;
+            }
+        }
+    }
+    &__rows{
+        &-item {
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 86px;   
+            background: #FFFFFF;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+            margin-bottom: 8px;
+            &__img {
+                padding-right: 30px;
+            }
+        }
+    }
+    &__rows-column {
+        text-align: left;
+        &_1 {
+            display: flex;
+            align-items: center;
+        }
+        &_3 {
+            padding-right: 51px;
+        }
+        &__info {
+            &-day, &-date, &-upload, &-upload-date {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                color: #000000;
+            }
+            &-upload-date {
+                margin-top: 8px;
+                font-size: 14px;
+            }
+            &-wrapper {
+                display: flex;
+                margin-top: 8px;
+            }
+            &-likes {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 18px;
+                color: #000000;
+                padding-right: 18px;
+                span {
+                    padding-right: 6px;
+                }
+            }
+
+            &-comments {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 18px;
+                color: #000000;
+                span {
+                    padding-right: 6px;
+                }
+            }
+        }
+    }
+   
+    
+    &__tiles-item {
+        display: none;
+        width: 200px;
+        height: 341px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        color: #000000;
+        background-color: #fff;
+        margin: 4px;
+        &__text-wrapper {
+            padding: 12px 12px 18px;
+        }
+        &__info {
+            display: flex;
+            justify-content: space-between;
+            &-text {
+                margin-bottom: 6px;
+            }
+            &-likes {
+                font-size: 14px;
+                span {
+                    padding-right: 6px;
+                }
+            }
+            &-comments {
+                font-size: 14px;
+                span {
+                    padding-right: 6px;
+                }
+            }
+        }
+        &__upload {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-top: 25px;
+        }
+
+    }
+
+    .load__btn {
+        text-align: center;
+        margin-top: 16px;
+        button {
+            width: 111px;
+            height: 28px;
+            font-family: 'Roboto';
+            text-transform: uppercase;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 28px;
+            letter-spacing: -0.03em;
+            color: #929292;
+            border: 1px solid #929292;
+            border-radius: 14px;
+            margin-bottom: 61px;
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                background-color: rgba(170, 170, 170, 0.426);
+            }
+        }
+    }
+
+    .active_rows {
+        display: flex;
+    }
+    .active_tiles {
+        display: block;
+    }
+    .content__wrapper {
+        display: block;
+        &_active {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    
+    
+}
